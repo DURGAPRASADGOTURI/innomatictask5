@@ -7,6 +7,8 @@
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    cursor: pointer; /* Indicate interactivity */
+    margin-bottom: 30px; /* Add margin between course boxes */
 }
 
 .section-courses .course-box img {
@@ -16,7 +18,7 @@
 }
 
 .section-courses .course-box:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Ensure the hover effect works */
 }
 
 .section-courses .card-body {
@@ -28,4 +30,8 @@
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+.section-courses .card-title:hover {
+    color: #007bff; /* Change color on hover */
 }
