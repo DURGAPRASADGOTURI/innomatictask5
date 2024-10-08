@@ -1,37 +1,66 @@
 .section-courses {
     padding: 50px 0;
+    background-color: #f8f9fa; /* Light background for contrast */
 }
 
 .section-courses .course-box {
-    border: 1px solid #ddd;
+    border: none; /* Removed border for a cleaner look */
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
     cursor: pointer;
     margin-bottom: 30px;
+    background-color: #ffffff; /* White background for course boxes */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .section-courses .course-box img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    transition: filter 0.3s ease; /* Added transition for image filter */
 }
 
 .section-courses .course-box:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
 }
 
 .section-courses .card-body {
-    padding: 15px;
+    padding: 20px; /* Increased padding for better spacing */
     text-align: center;
 }
 
 .section-courses .card-title {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px; /* Increased font size for titles */
+    font-weight: 700; /* Bold font for emphasis */
     margin-bottom: 10px;
+    color: #333; /* Darker color for better readability */
+    transition: color 0.3s ease; /* Added transition for color change */
 }
 
 .section-courses .card-title:hover {
-    color: #007bff;
+    color: #fd1d1d; /* Instagram pink color on hover */
+}
+
+.section-courses .card-description {
+    font-size: 16px; /* Added description font size */
+    color: #666; /* Softer color for description */
+    margin-bottom: 15px; /* Space between description and button */
+}
+
+.section-courses .enroll-button {
+    padding: 10px 20px; /* Button padding */
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    background: linear-gradient(45deg, #fd1d1d, #fcb045); /* Instagram gradient */
+    color: #ffffff; /* White text color for buttons */
+    font-weight: 600; /* Bold font for buttons */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+}
+
+.section-courses .enroll-button:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+    background: linear-gradient(45deg, #fcb045, #fd1d1d); /* Reversed gradient on hover */
 }
